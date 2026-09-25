@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Иван Манылов — frontend-разработчик, студент СПбГУПТД. Вёрстка, UI, Figma."
+    />
+    <title>Иван Манылов — Frontend</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">К содержимому</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="#top">Ivan Manylov</a>
+
+        <nav class="nav" id="site-nav" aria-label="Основная навигация" data-i18n-aria="navLabel">
+          <ul class="nav-list">
+            <li><a href="#about" data-i18n="navAbout">Обо мне</a></li>
+            <li><a href="#skills" data-i18n="navSkills">Навыки</a></li>
+            <li><a href="#work" data-i18n="navWork">Работы</a></li>
+            <li><a href="#contact" data-i18n="navContact">Контакт</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Язык" data-i18n-aria="langGroup">
+            <button type="button" class="chip" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="chip" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button
+            type="button"
+            class="icon-button"
+            id="theme-toggle"
+            aria-pressed="false"
+            data-i18n-aria="themeToggle"
+            aria-label="Включить тёмную тему"
+          >
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+          <a class="button button-small header-cta" href="#contact" data-i18n="navCta">Связаться</a>
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-i18n-aria="menuToggle"
+            aria-label="Открыть меню"
+          >
+            <span class="menu-toggle-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">СПбГУПТД · 4 курс · Frontend</p>
+          <h1 data-i18n="heroTitle">Иван Манылов</h1>
+          <p class="lede" data-i18n="heroLede">
+            Собираю интерфейсы в коде: вёрстка, UI и Figma. Учебные и pet-проекты — как способ думать
+            формой, ритмом и деталью.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact" data-i18n="ctaPrimary">Связаться</a>
+            <a class="button button-ghost" href="#work" data-i18n="ctaSecondary">Смотреть работы</a>
+          </div>
+        </div>
+        <div class="hero-stage" aria-hidden="true">
+          <div class="blob blob-a"></div>
+          <div class="blob blob-b"></div>
+          <div class="blob blob-c"></div>
+          <p class="hero-mark">UI / CSS</p>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">Обо мне</p>
+          <h2 data-i18n="aboutTitle">Дизайн в голове, интерфейс в браузере</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead reveal" data-i18n="aboutLead">
+            Учусь на направлении «Прикладная информатика в дизайне». Мне интересен фронтенд как место,
+            где типографика, сетка и поведение встречаются в одном экране.
+          </p>
+          <div class="about-notes">
+            <article class="note reveal">
+              <h3 data-i18n="aboutNote1Title">Как работаю</h3>
+              <p data-i18n="aboutNote1Text">
+                Сначала структура и сценарий, потом визуал, потом код. Не рисую «красиво потом прикрутим» —
+                сразу думаю, как это поедет на телефоне.
+              </p>
+            </article>
+            <article class="note reveal">
+              <h3 data-i18n="aboutNote2Title">Сейчас в фокусе</h3>
+              <p data-i18n="aboutNote2Text">
+                Чистый HTML, CSS и JavaScript. Адаптив, доступность, аккуратное движение без лишнего шума.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="skillsEyebrow">Навыки</p>
+          <h2 data-i18n="skillsTitle">Инструменты, которыми собираю экран</h2>
+        </div>
+        <ul class="skill-list">
+          <li class="reveal" data-i18n="skill1">Адаптивная вёрстка, Mobile First</li>
+          <li class="reveal" data-i18n="skill2">UI-ритм, сетка, типографика</li>
+          <li class="reveal" data-i18n="skill3">Figma: макеты и передача в код</li>
+          <li class="reveal" data-i18n="skill4">HTML5, CSS3, vanilla JavaScript</li>
+          <li class="reveal" data-i18n="skill5">Учебные и pet-проекты под реальное использование</li>
+          <li class="reveal" data-i18n="skill6">Светлая / тёмная тема, базовая a11y</li>
+        </ul>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="workEyebrow">Портфолио</p>
+          <h2 data-i18n="workTitle">Четыре задачи, на которых учился форме</h2>
+        </div>
+        <div class="work-grid">
+          <article class="project reveal">
+            <div class="project-cover tone-1" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta" data-i18n="p1Meta">Pet · UI / CSS</p>
+              <h3 data-i18n="p1Title">Ателье «Север»</h3>
+              <p data-i18n="p1Text">Лендинг мастерской: крупный шрифт, спокойная сетка, ясные CTA.</p>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover tone-2" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta" data-i18n="p2Meta">Учебный · JS</p>
+              <h3 data-i18n="p2Title">Трекер фокуса</h3>
+              <p data-i18n="p2Text">Небольшой интерфейс сессий: состояния, таймер, аккуратная типографика.</p>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover tone-3" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta" data-i18n="p3Meta">Pet · Figma → код</p>
+              <h3 data-i18n="p3Title">Каталог шрифтов</h3>
+              <p data-i18n="p3Text">Карточки гарнитур, фильтры настроения, проверка контраста на макете.</p>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover tone-4" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta" data-i18n="p4Meta">Учебный · адаптив</p>
+              <h3 data-i18n="p4Title">Расписание студии</h3>
+              <p data-i18n="p4Text">Расписание занятий: сложная таблица, которая на телефоне становится стопкой.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Контакт</p>
+          <h2 data-i18n="contactTitle">Напишите — отвечу по делу</h2>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name" data-i18n="labelName">Имя</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="labelEmail">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="labelMessage">Сообщение</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <p class="form-status" id="form-status" role="alert" hidden></p>
+            <button type="submit" class="button" data-i18n="formSubmit">Отправить</button>
+          </form>
+          <aside class="contact-aside reveal">
+            <p data-i18n="contactAside">
+              Форма на этой странице — прототип без сервера. Дублируйте письмо в почту или мессенджер.
+            </p>
+            <ul class="contact-links">
+              <li>
+                <a href="mailto:hello@example.com">hello@example.com</a>
+              </li>
+              <li>
+                <a href="https://t.me/username" rel="noopener noreferrer">Telegram</a>
+              </li>
+              <li>
+                <a href="https://github.com/username" rel="noopener noreferrer">GitHub</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <p class="footer-brand">Ivan Manylov · 2026</p>
+        <p data-i18n="footerTools">
+          Инструменты: ChatGPT — исходный промпт брифа; Cursor — код и вёрстка.
+        </p>
+        <p data-i18n="footerTime">Время работы над кодом: 18.09.2026, ~50 мин.</p>
+        <p data-i18n="footerJs">
+          JS: тема, язык, меню, якоря, reveal, форма, модальное подтверждение, localStorage.
+        </p>
+        <p data-i18n="footerReadme">
+          Существенный запрос, проверка и правки студента — в README.md.
+        </p>
+      </div>
+    </footer>
+
+    <div class="modal" id="success-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        tabindex="-1"
+      >
+        <h2 id="modal-title" data-i18n="modalTitle">Сообщение собрано</h2>
+        <p id="modal-text" data-i18n="modalText">
+          На сервер ничего не ушло — это демонстрация формы. Напишите напрямую по контактам.
+        </p>
+        <button type="button" class="button" data-close-modal data-i18n="modalClose">Закрыть</button>
+      </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
